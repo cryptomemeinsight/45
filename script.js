@@ -91,16 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isResumingFromTap) {
                 // Determine who complains based on who was tapped last
                 if (lastTappedCharacter === 'cz') {
-                    showBullyBubble(czBubble, "People are beating shit out me, Toly.");
+                    showBullyBubble(czBubble, "People are beating shit out of me, Toly.");
                 } else if (lastTappedCharacter === 'toby') {
-                    showBullyBubble(tobyBubble, "People are beating shit out me, CZ.");
+                    showBullyBubble(tobyBubble, "People are beating shit out of me, CZ.");
                 } else {
                     // Fallback if random or unknown
                     const talker = Math.random() > 0.5 ? 'cz' : 'toby';
                     if (talker === 'cz') {
-                        showBullyBubble(czBubble, "People are beating shit out me, Toly.");
+                        showBullyBubble(czBubble, "People are beating shit out of me, Toly.");
                     } else {
-                        showBullyBubble(tobyBubble, "People are beating shit out me, CZ.");
+                        showBullyBubble(tobyBubble, "People are beating shit out of me, CZ.");
                     }
                 }
                 isResumingFromTap = false; // Reset flag
