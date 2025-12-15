@@ -235,8 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkAngryMode(img, count, type) {
+        // Phase 0: Annoyed (> 30)
+        if (count > 30 && count <= 80) {
+            img.classList.add('annoyed');
+        }
+
         // Phase 1: Angry Mode (> 80)
         if (count > 80 && count <= 120) {
+            img.classList.remove('annoyed');
             img.classList.add('angry');
         }
         
