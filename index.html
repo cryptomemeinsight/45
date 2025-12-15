@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Official 45 Coin</title>
+    <link rel="icon" type="image/jpeg" href="logo_45.jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader-overlay">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <div id="loading-text">Loading......</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="split left">
+            <div class="bg-pattern-container" id="bg-left"></div>
+            <div class="tap-counter" id="cz-counter">0</div>
+            <div class="speech-bubble" id="cz-bubble">Stop it!</div>
+            <img src="cz.png" class="main-img" id="cz-img" alt="cz">
+            <img src="4.png" class="animated-img floating" alt="4">
+            <img src="bnb tweet.png" class="bg-tweet tweet-left floating" alt="BNB Tweet">
+        </div>
+        <div class="split right">
+            <div class="bg-pattern-container" id="bg-right"></div>
+            <div class="tap-counter" id="toby-counter">0</div>
+            <div class="speech-bubble" id="toby-bubble">Ouch!</div>
+            <img src="toby.png" class="main-img" id="toby-img" alt="toby">
+            <img src="5.png" class="animated-img floating" alt="5">
+            <img src="solana tweet.png" class="bg-tweet tweet-right floating" alt="Solana Tweet">
+        </div>
+        <div class="bottom-ui-wrapper">
+            <div class="official-label">
+                <img src="coin text.png" alt="Coin Text" class="label-img">
+            </div>
+            <div class="contract-card">
+                <div class="ca-group" onclick="copyToClipboard('C9YvyLShuX2g4uxjiNwEXVTmBodMPdKkRHxxWECapump')">
+                    <span id="ca-text">CA: C9Yvy...pump</span>
+                    <button class="copy-btn">COPY</button>
+                    <span class="copy-tooltip">Copied!</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://dexscreener.com/solana/9nTX3XufTTAnbxhwzuRtcGq2BcdCZqmmYkjiVaU9iYXa" target="_blank">
+                        <img src="dex.webp" alt="DexScreener" class="social-icon">
+                    </a>
+                    <a href="https://x.com/i/communities/1999113660870869124" target="_blank">
+                        <img src="x.png" alt="X" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
