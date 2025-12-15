@@ -428,6 +428,24 @@ img {
     100% { transform: translate(0); }
 }
 
+@keyframes mild-vibrate {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.main-img.annoyed {
+    transform: scale(1.05);
+    animation: mild-vibrate 0.4s linear infinite;
+}
+
+.main-img.annoyed:active,
+.main-img.annoyed.tapped {
+    transform: scale(1.0);
+}
+
 .main-img.angry {
     filter: drop-shadow(0 10px 20px rgba(255, 0, 0, 0.6)) sepia(100%) hue-rotate(-50deg) saturate(400%);
     transform: scale(1.1);
