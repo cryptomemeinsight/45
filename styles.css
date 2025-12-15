@@ -257,6 +257,22 @@ img {
     opacity: 0; /* Hidden by default */
 }
 
+.tap-counter::after {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 5px; /* Added margin for spacing */
+    opacity: 0.9;
+}
+
+#cz-counter::after {
+    content: "CZ TAP COUNTER";
+}
+
+#toby-counter::after {
+    content: "TOLY TAP COUNTER";
+}
+
 .tap-counter.show {
     opacity: 1;
 }
@@ -581,5 +597,16 @@ img {
         top: 3%; /* Move up */
         right: 0%; /* Move to right side */
         max-width: 35%; /* Slightly smaller to avoid crowding */
+    }
+
+    .tap-counter {
+        font-size: 2rem; /* Reduced from 3rem */
+        left: 20px; /* Adjust position slightly */
+        top: 25%;
+    }
+
+    .tap-counter::after {
+        font-size: 0.8rem; /* Reduced from 1.2rem */
+        letter-spacing: 0.5px;
     }
 }
