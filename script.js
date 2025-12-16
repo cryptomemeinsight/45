@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 2000);
             } else {
                 if (!hasGreeted) {
-                    showBullyBubble(tobyBubble, "Hey, CHENPENZAO");
+                    showBullyBubble(tobyBubble, "Hey, CZ");
                     hasGreeted = true;
                 } else {
                     const phrase = tobyBullyPhrases[Math.floor(Math.random() * tobyBullyPhrases.length)];
